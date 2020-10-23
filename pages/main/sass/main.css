@@ -1,17 +1,56 @@
-@font-face {
-  font-family: "ArialRegular";
-  src: url("../../../../assets/fonts/ArialRegular.eot");
-  src: url("../../../../assets/fonts/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../../../../assets/fonts/ArialRegular.woff") format("woff"), url("../../../../assets/fonts/ArialRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+.wrapper {
+  max-width: 1200px;
+}
+
+.header-notOnly {
+  background: url(../../../assets/images/noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.header {
+  height: 122 px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: width;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: width;
+}
+
+.layout-9-column-in-2-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: width;
 }
 
 @font-face {
-  font-family: "GeorgiaRegular";
+  font-family: Georgia;
   src: url("../../../../assets/fonts/Georgia.eot");
   src: url("../../../../assets/fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../../../../assets/fonts/Georgia.woff") format("woff"), url("../../../../assets/fonts/Georgia.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,14 +60,17 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 h1 {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 3.2rem;
   line-height: 110%;
+  color: #F1CDB3;
 }
 
 h2 {
@@ -39,7 +81,7 @@ h2 {
 }
 
 h3 {
-  font-style: regular;
+  font-style: normal;
   font-size: 3.5rem;
   line-height: 45.5px;
   line-height: 130%;
@@ -55,13 +97,58 @@ h4 {
 }
 
 h5 {
-  font-style: regular;
+  font-style: normal;
   font-size: 1.5rem;
   line-height: 110%;
   letter-spacing: 6%;
 }
 
-.wrapper {
-  max-width: 1280px;
+.navigation {
+  width: 443px;
 }
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list__item {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.4rem;
+  list-style-type: none;
+}
+
+.list__link {
+  text-decoration: none;
+  color: #CDCDCD;
+}
+
+.list__link_active {
+  border-bottom: solid 3px #F1CDB3;
+}
+
+.logo__title {
+  font-family: Georgia;
+  letter-spacing: 6%;
+}
+
+.logo__subtitle {
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.495rem;
+  color: #FFFFFF;
+  padding-top: 14px;
+}
+
+.button {
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.2rem;
+  height: 52px;
+}
+
 /*# sourceMappingURL=main.css.map */

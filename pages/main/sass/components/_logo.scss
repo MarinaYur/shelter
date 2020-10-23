@@ -1,0 +1,15 @@
+// .logo {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.logo__title {
+    font-family: Georgia;
+    letter-spacing: 6%;
+}
+
+.logo__subtitle {
+    @include font($size: 1.3rem, $height: 1.495rem, $weight: 400);
+    color: $color-light-xl;
+    padding-top: 14px;
+}

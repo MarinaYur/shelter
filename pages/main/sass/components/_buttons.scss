@@ -1,0 +1,4 @@
+.button {
+    @include font($size: 1.7rem, $height:2.2rem);
+    height: 52px;
+}

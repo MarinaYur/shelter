@@ -1,0 +1,11 @@
+.layout-2-column {
+    @include columns($width:48vw);
+}
+
+.layout-3-column{
+    @include columns($width:30vw);
+}
+
+.layout-9-column-in-2-rows{
+    @include columns($width:18vw);
+}
