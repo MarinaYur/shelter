@@ -1,5 +1,6 @@
 .layout-2-column {
-    @include columns($width:48vw);
+    @include columns($width: 45%);
+    flex-wrap: nowrap;
 }
 
 .layout-3-column{

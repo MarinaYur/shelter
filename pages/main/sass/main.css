@@ -11,30 +11,63 @@
 }
 
 .header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  padding: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0px 0 40px;
 }
 
 .layout-2-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-basis: width;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.layout-2-column > * {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
 }
 
 .layout-3-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-basis: width;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.layout-3-column > * {
+  -ms-flex-preferred-size: 30vw;
+      flex-basis: 30vw;
 }
 
 .layout-9-column-in-2-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-basis: width;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.layout-9-column-in-2-rows > * {
+  -ms-flex-preferred-size: 18vw;
+      flex-basis: 18vw;
 }
 
 @font-face {
@@ -44,11 +77,11 @@
   font-style: normal;
   font-weight: normal;
 }
+
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -74,10 +107,12 @@ h1 {
 }
 
 h2 {
+  font-family: Georgia;
   font-style: normal;
   font-weight: normal;
   font-size: 4.4rem;
   line-height: 130%;
+  color: #FFFFFF;
 }
 
 h3 {
@@ -103,13 +138,26 @@ h5 {
   letter-spacing: 6%;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #CDCDCD;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1,5rem;
+  line-height: 2,4rem;
+}
+
 .navigation {
   width: 443px;
 }
 
 .navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .list__item {
@@ -150,5 +198,4 @@ h5 {
   line-height: 2.2rem;
   height: 52px;
 }
-
 /*# sourceMappingURL=main.css.map */
