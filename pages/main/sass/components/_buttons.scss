@@ -1,4 +1,16 @@
 .button {
     @include font($size: 1.7rem, $height:2.2rem);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    width: 207px;
+    height: 52px;   
+    color: $color-dark-3xl;
+    letter-spacing: 1px;
+}
+
+.button--colored {
+    background-color: $color-primary;
 }
