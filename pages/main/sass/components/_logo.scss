@@ -5,11 +5,11 @@
 
 .logo__title {
     font-family: Georgia;
-    letter-spacing: 6%;
+    letter-spacing: -0.7px;
 }
 
 .logo__subtitle {
-    @include font($size: 1.3rem, $height: 1.495rem, $weight: 400);
+    @include font($size: 1.3rem, $height: 3rem, $weight: 400);
     color: $color-light-xl;
-    padding-top: 14px;
+    letter-spacing: 1.3px;
 }

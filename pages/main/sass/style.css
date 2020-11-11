@@ -1,5 +1,6 @@
 .wrapper {
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .header-notOnly {
@@ -7,67 +8,41 @@
 }
 
 .header {
-  height: 122 px;
+  padding-bottom: 61px;
 }
 
 .header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 60px 0px 0 40px;
+  justify-content: space-between;
+  padding-top: 61px;
 }
 
 .layout-2-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
-
 .layout-2-column > * {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  flex-basis: 45%;
 }
 
 .layout-3-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .layout-3-column > * {
-  -ms-flex-preferred-size: 30vw;
-      flex-basis: 30vw;
+  flex-basis: 30vw;
 }
 
 .layout-9-column-in-2-rows {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .layout-9-column-in-2-rows > * {
-  -ms-flex-preferred-size: 18vw;
-      flex-basis: 18vw;
+  flex-basis: 18vw;
 }
 
 @font-face {
@@ -77,11 +52,11 @@
   font-style: normal;
   font-weight: normal;
 }
-
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -143,21 +118,18 @@ p {
   color: #CDCDCD;
   font-weight: 400;
   font-style: normal;
-  font-size: 1,5rem;
-  line-height: 2,4rem;
+  font-size: 1, 5rem;
+  line-height: 2, 4rem;
 }
 
 .navigation {
   width: 443px;
+  padding-top: 15px;
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .list__item {
@@ -179,16 +151,16 @@ p {
 
 .logo__title {
   font-family: Georgia;
-  letter-spacing: 6%;
+  letter-spacing: -0.7px;
 }
 
 .logo__subtitle {
   font-size: 1.3rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.495rem;
+  line-height: 3rem;
   color: #FFFFFF;
-  padding-top: 14px;
+  letter-spacing: 1.3px;
 }
 
 .button {
@@ -198,4 +170,5 @@ p {
   line-height: 2.2rem;
   height: 52px;
 }
-/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=style.css.map */
