@@ -12,63 +12,42 @@
 }
 
 .header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 61px;
 }
 
-.layout-2-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+.notOnly__puppy {
+  border: none;
+  font-size: 0px;
 }
 
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
 .layout-2-column > * {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .layout-3-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .layout-3-column > * {
-  -ms-flex-preferred-size: 30vw;
-      flex-basis: 30vw;
+  flex-basis: 33.3%;
 }
 
 .layout-9-column-in-2-rows {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .layout-9-column-in-2-rows > * {
-  -ms-flex-preferred-size: 18vw;
-      flex-basis: 18vw;
+  flex-basis: 20%;
 }
 
 .notOnly__content {
@@ -81,6 +60,7 @@
 }
 
 .notOnly__subtitle {
+  color: #CDCDCD;
   letter-spacing: -0.35px;
   line-height: 2.4rem;
   width: 481px;
@@ -90,10 +70,55 @@
 .about__petsImage {
   width: 300px;
   height: 408px;
-  background-image: url("../../../../assets/images/about-pets.svg");
-  background-repeat: no-repeat;
+  padding: 81px 0 0 175px;
+  /*background-image: url('/../../../../assets/images/about-pets.png');
+  background-repeat: no-repeat;*/
 }
 
+.wrapper__about {
+  padding: 0px 0 163px 0;
+}
+
+.about__title {
+  width: 323px;
+  padding-top: 95px;
+  letter-spacing: 3.3px;
+}
+
+.subtitle {
+  color: #4C4C4C;
+  letter-spacing: -0.3634px;
+  padding: 24px 0 0 0;
+  width: 437px;
+  line-height: 160%;
+}
+
+.about__subtitle1 {
+  padding-bottom: 21px;
+}
+
+.wrapper__ourFriends {
+  padding: 25px 0 645px 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.ourFriends__title {
+  text-align: center;
+  letter-spacing: 4px;
+  padding: 0 70px 0 0;
+  width: 490px;
+  margin: 0 auto;
+  white-space: pre-line;
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../../../assets/fonts/ArialRegular.eot");
+  src: url("../../../assets/fonts/ArialRegular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ArialRegular.woff") format("woff"), url("../../../assets/fonts/ArialRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 @font-face {
   font-family: Georgia;
   src: url("../../../../assets/fonts/Georgia.eot");
@@ -101,11 +126,11 @@
   font-style: normal;
   font-weight: normal;
 }
-
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -140,9 +165,12 @@ h2 {
 }
 
 h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
+  font-weight: normal;
   font-size: 3.5rem;
   line-height: 45.5px;
+  color: #545454;
   line-height: 130%;
   letter-spacing: 6%;
 }
@@ -164,11 +192,10 @@ h5 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  color: #CDCDCD;
   font-weight: 400;
   font-style: normal;
-  font-size: 1,5rem;
-  line-height: 2,4rem;
+  font-size: 1, 5rem;
+  line-height: 2, 4rem;
 }
 
 .navigation {
@@ -177,12 +204,8 @@ p {
 }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .list__item {
@@ -221,11 +244,10 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 2.2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   height: 52px;
   border: 2px solid #F1CDB3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 100px;
   width: 207px;
   height: 52px;
@@ -236,4 +258,11 @@ p {
 .button--colored {
   background-color: #F1CDB3;
 }
+
+.pet1-img {
+  height: 270px;
+  width: 270px;
+  background-image: url("../../../assets/images/pets-katrine.png");
+}
+
 /*# sourceMappingURL=style.css.map */

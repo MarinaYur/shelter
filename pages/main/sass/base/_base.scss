@@ -37,9 +37,12 @@ h2 {
 }
 
 h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
+    font-weight: normal;
     font-size: 3.5rem;
     line-height: 45.5px;
+    color: $color-dark-l;
     line-height: 130%;
     letter-spacing: 6%;
 }
@@ -61,7 +64,6 @@ h5 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    color: $color-dark-s;
     font-weight: 400;
     font-style: normal;
     font-size: 1,5rem;
