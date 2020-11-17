@@ -45,6 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  justify-content: space-evenly;
 }
 .layout-9-column-in-2-rows > * {
   flex-basis: 20%;
@@ -65,6 +66,10 @@
   line-height: 2.4rem;
   width: 481px;
   padding-bottom: 41px;
+}
+
+.notOnly__button {
+  width: 207px;
 }
 
 .about__petsImage {
@@ -98,22 +103,119 @@
 }
 
 .wrapper__ourFriends {
-  padding: 25px 0 645px 0;
+  padding: 24px 0 180px 0;
   margin-left: auto;
   margin-right: 0;
+  background-color: #F6F6F6;
+}
+
+.ourFriends__button {
+  width: 261px;
+  margin: 60px 0 0 430px;
 }
 
 .ourFriends__title {
   text-align: center;
-  letter-spacing: 4px;
-  padding: 0 70px 0 0;
-  width: 490px;
+  letter-spacing: 0.2rem;
+  padding: 1px 77px 0 0;
+  width: 524px;
   margin: 0 auto;
   white-space: pre-line;
 }
 
+.ourFriends__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 60px 0 0 65px;
+  position: relative;
+}
+
+.slider__arrow {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 50%;
+  position: absolute;
+  top: 25.2rem;
+}
+
+.slider__left-arrow {
+  background-image: url("../../../assets/images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scaleX(-1);
+  left: -4rem;
+}
+
+.slider__right-arrow {
+  background-image: url("../../../assets/images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 4rem;
+}
+
+.help__items {
+  padding: 60px 0 0 88px;
+  letter-spacing: 1px;
+  height: 398px;
+}
+
+.wrapper__help {
+  padding-bottom: 124px;
+}
+
+.help_title {
+  text-align: center;
+  white-space: pre-line;
+  letter-spacing: 0.2rem;
+}
+
+.wrapper__addition {
+  padding: 0px 0 180px 126px;
+}
+
+.addition__image {
+  width: 505px;
+  height: 283px;
+  background-image: url("../../../assets/images/donation-dog.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.addition__content {
+  padding: 1px 0px 0 14px;
+}
+
+.addition__title {
+  padding-bottom: 20px;
+  letter-spacing: 0.22rem;
+  white-space: pre-line;
+}
+
+.addition__subtitle {
+  font-family: Georgia, serif;
+  color: #545454;
+  letter-spacing: 0.09rem;
+  font-weight: 400;
+  padding: 0 0 20px 1px;
+}
+
+.addition__note {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #B2B2B2;
+  padding: 21px 0 0 0;
+  width: 362px;
+  letter-spacing: 0.0023rem;
+}
+
 @font-face {
-  font-family: "Arial";
+  font-family: Arial;
   src: url("../../../assets/fonts/ArialRegular.eot");
   src: url("../../../assets/fonts/ArialRegular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/ArialRegular.woff") format("woff"), url("../../../assets/fonts/ArialRegular.ttf") format("truetype");
   font-style: normal;
@@ -121,8 +223,8 @@
 }
 @font-face {
   font-family: Georgia;
-  src: url("../../../../assets/fonts/Georgia.eot");
-  src: url("../../../../assets/fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../../../../assets/fonts/Georgia.woff") format("woff"), url("../../../../assets/fonts/Georgia.ttf") format("truetype");
+  src: url("../../../assets/fonts/Georgia.eot");
+  src: url("../../../assets/fonts/Georgia.eot?#iefix") format("embedded-opentype"), url("../../../assets/fonts/Georgia.woff") format("woff"), url("../../../assets/fonts/Georgia.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -179,7 +281,7 @@ h4 {
   font-style: normal;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 130%;
+  line-height: 2.3rem;
   letter-spacing: 6%;
 }
 
@@ -212,7 +314,7 @@ p {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.4rem;
+  line-height: 3.2rem;
   list-style-type: none;
 }
 
@@ -227,7 +329,7 @@ p {
 
 .logo__title {
   font-family: Georgia;
-  letter-spacing: -0.7px;
+  letter-spacing: 0.2rem;
 }
 
 .logo__subtitle {
@@ -247,10 +349,7 @@ p {
   font-family: Georgia, "Times New Roman", Times, serif;
   height: 52px;
   border: 2px solid #F1CDB3;
-  box-sizing: border-box;
   border-radius: 100px;
-  width: 207px;
-  height: 52px;
   color: #292929;
   letter-spacing: 1px;
 }
@@ -259,10 +358,168 @@ p {
   background-color: #F1CDB3;
 }
 
-.pet1-img {
+.pet {
+  background-color: #FAFAFA;
+  width: 361px;
+  height: 435px;
+}
+
+.pet__image {
   height: 270px;
   width: 270px;
+}
+
+.pet1-img {
   background-image: url("../../../assets/images/pets-katrine.png");
+}
+
+.pet2-img {
+  background-image: url("../../../assets/images/pet-Jennifer.svg");
+}
+
+.pet3-img {
+  background-image: url("../../../assets/images/pets-woody.svg");
+}
+
+.pet__name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 30px 0 0 98px;
+  letter-spacing: 0.2rem;
+  line-height: 2.272rem;
+  color: #545454;
+}
+
+.pet__button {
+  background-color: white;
+  width: 187px;
+  margin: 30px 0 0 40px;
+}
+
+.item {
+  color: #545454;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 113px;
+}
+
+.item__image {
+  width: 60px;
+  height: 60px;
+}
+
+.item__image1 {
+  margin-left: 10px;
+  background-image: url("../../../assets/images/icons/icon-pet-food.svg");
+}
+
+.item__image2 {
+  margin-left: 24px;
+  background-image: url("../../../assets/images/icons/icon-transportation.svg");
+}
+
+.item__title2 {
+  margin-left: -21px;
+  letter-spacing: 0.17rem;
+}
+
+.item__image3 {
+  margin-left: 27px;
+  background-image: url("../../../assets/images/icons/icon-toys.svg");
+}
+
+.item__title3 {
+  margin-left: 35px;
+  letter-spacing: 0.15rem;
+}
+
+.item__image4 {
+  margin-left: 31px;
+  background-image: url("../../../assets/images/icons/icon-bowls-and-cups.svg");
+}
+
+.item__title4 {
+  margin-left: -15px;
+  letter-spacing: 0.1rem;
+}
+
+.item__image5 {
+  margin-left: 56px;
+  background-image: url("../../../assets/images/icons/icon-shampoos.svg");
+}
+
+.item__title5 {
+  margin-left: 34px;
+  letter-spacing: 0.1rem;
+}
+
+.item__image6 {
+  margin-left: 53px;
+  background-image: url("../../../assets/images/icons/icon-vitamins.svg");
+}
+
+.item__title6 {
+  margin-left: 39px;
+  letter-spacing: 0.2rem;
+}
+
+.item__image7 {
+  margin-left: 2px;
+  background-image: url("../../../assets/images/icons/icon-medicines.svg");
+}
+
+.item__title7 {
+  margin-left: -18px;
+  letter-spacing: 0.14rem;
+}
+
+.item__image8 {
+  margin-left: -12px;
+  background-image: url("../../../assets/images/icons/icon-collars-leashes.svg");
+}
+
+.item__title8 {
+  margin-left: -65px;
+  letter-spacing: 0.122rem;
+}
+
+.item__image9 {
+  margin-left: -5px;
+  background-image: url("../../../assets/images/icons/icon-sleeping-area.svg");
+}
+
+.item__title9 {
+  margin-left: -47px;
+  letter-spacing: 0.08rem;
+}
+
+.bank-card {
+  width: 349px;
+  height: 43px;
+  background-color: #F1CDB3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 0.9rem;
+}
+
+.bank-card__icon {
+  width: 30px;
+  height: 23px;
+  background-image: url("../../../assets/images/icons/credit-card.svg");
+  margin: 0 0 0 15px;
+}
+
+.bank-card__bank-link {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.05rem;
+  text-decoration: none;
+  color: #545454;
+  letter-spacing: 0.019rem;
+  padding-left: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

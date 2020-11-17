@@ -1,0 +1,98 @@
+.item {
+    color: $color-dark-l;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 113px;
+}
+
+.item__image {
+    width: 60px;
+    height: 60px;
+}
+
+.item__image1 {
+    margin-left: 10px;
+    background-image: url("../../../assets/images/icons/icon-pet-food.svg");
+}
+
+.item__image2 {
+    margin-left: 24px;
+    background-image: url("../../../assets/images/icons/icon-transportation.svg");
+}
+
+.item__title2{
+    margin-left: -21px;
+    letter-spacing: 0.17rem;
+}
+
+.item__image3 {
+    margin-left: 27px;
+    background-image: url("../../../assets/images/icons/icon-toys.svg");
+}
+
+.item__title3{
+    margin-left: 35px;
+    letter-spacing: 0.15rem;
+}
+
+.item__image4 {
+    margin-left: 31px;
+    background-image: url("../../../assets/images/icons/icon-bowls-and-cups.svg");
+}
+
+.item__title4{
+    margin-left: -15px;
+    letter-spacing: 0.1rem;
+}
+
+
+.item__image5 {
+    margin-left: 56px;
+    background-image: url("../../../assets/images/icons/icon-shampoos.svg");
+}
+
+.item__title5{
+    margin-left: 34px;
+    letter-spacing: 0.1rem;
+}
+
+.item__image6 {
+    margin-left: 53px;
+    background-image: url("../../../assets/images/icons/icon-vitamins.svg");
+}
+
+.item__title6{
+    margin-left: 39px;
+    letter-spacing: 0.2rem;
+}
+
+.item__image7 {
+    margin-left: 2px;
+    background-image: url("../../../assets/images/icons/icon-medicines.svg");
+}
+
+.item__title7{
+    margin-left: -18px;
+    letter-spacing: 0.14rem;
+}
+
+.item__image8 {
+    margin-left: -12px;
+    background-image: url("../../../assets/images/icons/icon-collars-leashes.svg");
+}
+
+.item__title8{
+    margin-left: -65px;
+    letter-spacing: 0.122rem;
+}
+
+.item__image9 {
+    margin-left: -5px;
+    background-image: url("../../../assets/images/icons/icon-sleeping-area.svg");
+}
+
+.item__title9{
+    margin-left: -47px;
+    letter-spacing: 0.08rem;
+}
