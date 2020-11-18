@@ -1,20 +1,25 @@
 .notOnly__content {
-    padding-top: 168px;
+    padding-top: 169px;
 }
 
 .notOnly__title {
-    width: 314px;
+    width: 360px;
     padding-bottom: 41px;
 }
 
 .notOnly__subtitle {
     color: $color-dark-s;
-    letter-spacing: -0.35px;
+    letter-spacing: -0.042rem;
     line-height: 2.4rem;
-    width: 481px;
+    width: 475px;
     padding-bottom: 41px;
 }
 
 .notOnly__button {
     width: 207px;
+    cursor: pointer;
 }
+
+.notOnly__button:hover {
+        background-color: $color-light-l;
+    }

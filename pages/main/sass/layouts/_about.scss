@@ -2,28 +2,32 @@
     width: 300px;
     height: 408px;
     padding: 81px 0 0 175px;
-    /*background-image: url('/../../../../assets/images/about-pets.png');
-    background-repeat: no-repeat;*/
 }
 
 .wrapper__about {
-    padding: 0px 0 163px 0;
+    padding: 0px 0 114px 0;
+    justify-content: flex-start;
 }
 
 .about__title {
     width: 323px;
     padding-top: 95px;
-    letter-spacing: 3.3px;
+    letter-spacing: 0.17rem;
 }
 
 .subtitle {
+    font-size: 1.5rem;
     color: $color-dark-xl;
-    letter-spacing: -0.3634px;
     padding: 24px 0 0 0;
     width: 437px;
-    line-height: 160%;
+    line-height: 2.4rem;
 }
 
 .about__subtitle1 {
-    padding-bottom: 21px;
+    letter-spacing: 0.005rem;
+    padding-bottom: 25px;
+}
+
+.about__subtitle2 {
+    letter-spacing: 0.008rem;
 }
