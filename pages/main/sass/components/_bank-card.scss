@@ -2,7 +2,7 @@
     width: 349px;
     height: 43px;
     background-color: $color-primary;
-    @include flex-start;
+    @extend %flex-start;
     border-radius: 0.9rem;
 }
 

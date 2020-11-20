@@ -13,10 +13,3 @@
         flex-basis: $width;
     }
 }
-
-@mixin flex-start {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: nowrap;
-}

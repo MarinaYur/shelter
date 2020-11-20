@@ -1,6 +1,14 @@
+
+//Abstacts
 @import "abstracts/constans";
 @import "abstracts/mixins";
+@import "abstracts/placeholders";
 
+//Base
+@import "base/fonts";
+@import "base/base";
+
+//Layouts
 @import "layouts/wrapper";
 @import "layouts/header";
 @import "layouts/columns";
@@ -11,9 +19,7 @@
 @import "layouts/addition";
 @import "layouts/footer";
 
-@import "base/fonts";
-@import "base/base";
-
+//Components
 @import "components/navigation";
 @import "components/logo";
 @import "components/buttons";
