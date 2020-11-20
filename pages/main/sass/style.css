@@ -177,6 +177,10 @@
   background-color: #F6F6F6;
 }
 
+.slider__arrow:hover {
+  background-color: #F1CDB3;
+}
+
 .help__items {
   padding: 58px 0 0 88px;
   letter-spacing: 1px;
@@ -354,55 +358,55 @@ body {
 }
 
 h1 {
+  color: #F1CDB3;
+  font-size: 3.2rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 3.2rem;
   line-height: 110%;
-  color: #F1CDB3;
 }
 
 h2 {
   font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 4.4rem;
-  line-height: 130%;
   color: #FFFFFF;
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 3.5rem;
-  line-height: 45.5px;
   color: #545454;
-  line-height: 130%;
   letter-spacing: 6%;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
 }
 
 h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 6%;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 2rem;
   line-height: 2.3rem;
-  letter-spacing: 6%;
 }
 
 h5 {
-  font-style: normal;
-  font-size: 1.5rem;
-  line-height: 110%;
   letter-spacing: 6%;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-size: 1.5rem;
   font-style: normal;
-  font-size: 1, 5rem;
-  line-height: 2, 4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
 }
 
 .navigation {
@@ -428,7 +432,7 @@ p {
   color: #CDCDCD;
 }
 
-.list__link_active {
+.list__link--active {
   color: #FAFAFA;
   border-bottom: solid 3px #F1CDB3;
 }

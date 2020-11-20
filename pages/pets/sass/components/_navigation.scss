@@ -15,10 +15,11 @@
 
 .list__link {
     text-decoration: none;
-    color: $color-dark-s;
+    color: $color-dark-l;
+    padding-bottom: 4px;
 }
 
 .list__link--active {
-    color: $color-light-s;
+    color: $color-dark-3xl;
     border-bottom: solid 3px $color-primary;
 }

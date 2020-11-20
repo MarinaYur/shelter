@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/MarinaYur/shelter/issues"
   },
-  "homepage": "https://github.com/MarinaYur/shelter#readme"
+  "homepage": "https://github.com/MarinaYur/shelter#readme",
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
 }
