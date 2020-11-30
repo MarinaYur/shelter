@@ -39,6 +39,9 @@
     position: absolute;
     top: 25.2rem;
     cursor: pointer;
+        &:hover {
+            background-color: $color-primary;
+        }
 }
 
 .slider__left-arrow {
@@ -58,12 +61,7 @@
 
 .ourFriends__button {
     cursor: pointer;
-}
-
-.ourFriends__button:hover {
-    background-color: $color-light-l;
-}
-
-.slider__arrow:hover {
-    background-color: $color-primary;
+        &:hover {
+            background-color: $color-light-l;
+        }
 }

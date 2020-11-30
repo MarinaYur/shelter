@@ -6,9 +6,7 @@
     border-radius: 100px;
     color: $color-dark-3xl;
     letter-spacing: 1px;
+        &--colored {
+            background-color: $color-primary;
+        }
 }
-
-.button--colored {
-    background-color: $color-primary;
-}
-

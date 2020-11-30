@@ -1,5 +1,8 @@
 .notOnly__content {
     padding-top: 169px;
+    @include media-laptop {
+        padding: 5px 0px 0 124px;
+    }
 }
 
 .notOnly__title {
@@ -12,13 +15,25 @@
     line-height: 2.4rem;
     width: 474px;
     padding-bottom: 41px;
+    @include media-laptop {
+        padding-bottom: 42px;
+    }
 }
 
 .notOnly__button {
     width: 207px;
     cursor: pointer;
+        &:hover {
+            background-color: $color-light-l;
+        }
+        @include media-laptop {
+            margin-left: 12.6rem;
+        }
 }
 
-.notOnly__button:hover {
-        background-color: $color-light-l;
+.wrapper__notOnly {
+    @include media-laptop {
+        display: flex;
+        flex-direction: column;
     }
+}
