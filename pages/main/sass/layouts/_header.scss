@@ -10,12 +10,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 61px;
-    @include media-laptop {
+    @include media-tablet {
         padding-top: 31px;
     }
-}
-
-.notOnly__puppy {
-    border: none;
-    font-size: 0px;
 }

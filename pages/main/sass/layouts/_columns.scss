@@ -5,9 +5,18 @@
 
 .layout-3-column{
     @include columns($width:33.3%);
+    @include media-tablet {
+        justify-content: flex-start;
+    }
 }
 
 .layout-9-column-in-2-rows{
     @include columns($width:20%);
     justify-content: space-evenly;
+    @include media-tablet {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 7vw;
+    }
 }

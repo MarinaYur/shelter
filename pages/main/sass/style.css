@@ -33,6 +33,7 @@ html {
 }
 
 body {
+  max-width: 1280px;
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -95,7 +96,7 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .wrapper {
     padding: 0 30px 0 30px;
   }
@@ -114,15 +115,10 @@ p {
   justify-content: space-between;
   padding-top: 61px;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .header__content {
     padding-top: 31px;
   }
-}
-
-.notOnly__puppy {
-  border: none;
-  font-size: 0px;
 }
 
 .layout-2-column {
@@ -143,6 +139,11 @@ p {
 .layout-3-column > * {
   flex-basis: 33.3%;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .layout-3-column {
+    justify-content: flex-start;
+  }
+}
 
 .layout-9-column-in-2-rows {
   display: flex;
@@ -153,13 +154,21 @@ p {
 .layout-9-column-in-2-rows > * {
   flex-basis: 20%;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .layout-9-column-in-2-rows {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 7vw;
+  }
+}
 
 .notOnly__content {
-  padding-top: 169px;
+  padding-top: 168px;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__content {
-    padding: 5px 0px 0 124px;
+    padding: 0.7% 0px 0 17.5%;
   }
 }
 
@@ -174,7 +183,7 @@ p {
   width: 474px;
   padding-bottom: 41px;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__subtitle {
     padding-bottom: 42px;
   }
@@ -187,15 +196,35 @@ p {
 .notOnly__button:hover {
   background-color: #F6F6F6;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .notOnly__button {
     margin-left: 12.6rem;
   }
 }
 
-@media screen and (max-width: 1279px) {
+.notOnly__start-screen-puppy {
+  width: 695px;
+  height: 732px;
+  background-image: url("../../../assets/images/start-screen-puppy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .notOnly__start-screen-puppy {
+    width: 569px;
+    height: 593px;
+    background-image: url("../../../assets/images/start-screen-puppy-768.png");
+    background-size: cover;
+    margin: 14% 0 0 19.5%;
+  }
+}
+
+.wrapper__notOnly {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .wrapper__notOnly {
-    display: flex;
     flex-direction: column;
   }
 }
@@ -203,18 +232,43 @@ p {
 .about__petsImage {
   width: 300px;
   height: 408px;
-  padding: 81px 0 0 175px;
+  background-image: url("../../../assets/images/about-pets.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 80px 120px 0 175px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__petsImage {
+    margin: 0 0 0 234px;
+  }
 }
 
 .wrapper__about {
-  padding: 0px 0 114px 0;
+  display: flex;
+  padding: 0px 0 100px 0;
   justify-content: flex-start;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .wrapper__about {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__content {
+    margin-left: 170px;
+  }
 }
 
 .about__title {
   width: 323px;
   padding-top: 95px;
   letter-spacing: 0.17rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__title {
+    padding-top: 82px;
+  }
 }
 
 .subtitle {
@@ -225,6 +279,11 @@ p {
   color: #4C4C4C;
   padding: 24px 0 0 0;
   width: 437px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .subtitle {
+    padding-bottom: 77px;
+  }
 }
 
 .about__subtitle1 {
@@ -245,6 +304,11 @@ p {
   margin-left: auto;
   margin-right: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .wrapper__ourFriends {
+    padding: 25px 0 100px 0;
+  }
+}
 
 .ourFriends__button {
   width: 261px;
@@ -259,6 +323,12 @@ p {
   margin: 0 auto;
   white-space: pre-line;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .ourFriends__title {
+    margin-left: 160px;
+    padding-top: 59px;
+  }
+}
 
 .ourFriends__slider {
   display: flex;
@@ -267,6 +337,11 @@ p {
   flex-wrap: nowrap;
   padding: 60px 0 0 65px;
   position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .ourFriends__slider {
+    padding: 60px 0 0 94px;
+  }
 }
 
 .slider__arrow {
@@ -289,6 +364,11 @@ p {
   transform: scaleX(-1);
   left: -4rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .slider__left-arrow {
+    left: 3rem;
+  }
+}
 
 .slider__right-arrow {
   background-image: url("../../../assets/images/arrow-right.svg");
@@ -296,12 +376,34 @@ p {
   background-position: center;
   right: 4rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .slider__right-arrow {
+    right: 3rem;
+  }
+}
 
 .ourFriends__button {
   cursor: pointer;
 }
 .ourFriends__button:hover {
   background-color: #F6F6F6;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .ourFriends__button {
+    margin: 59px 0 0 253px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .ourFriends__pet1 {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .ourFriends__pet3 {
+    display: none;
+  }
 }
 
 .help__items {
@@ -312,6 +414,12 @@ p {
 
 .wrapper__help {
   padding-bottom: 42px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .wrapper__help {
+    padding-top: 81px;
+    padding-bottom: 210px;
+  }
 }
 
 .help_title {
@@ -326,7 +434,7 @@ p {
 }
 
 .wrapper__addition {
-  padding: 81px 0 100px 126px;
+  padding: 81px 0 100px 142px;
 }
 
 .addition__image {
@@ -338,7 +446,7 @@ p {
 }
 
 .addition__content {
-  padding: 1px 0px 0 14px;
+  padding: 1px 161px 0 0px;
 }
 
 .addition__title {

@@ -6,6 +6,10 @@
 
 .wrapper__help {
     padding-bottom: 42px;
+    @include media-tablet {
+        padding-top: 81px;
+        padding-bottom: 210px;
+    }
 }
 
 .help_title {

@@ -1,7 +1,7 @@
 .notOnly__content {
-    padding-top: 169px;
-    @include media-laptop {
-        padding: 5px 0px 0 124px;
+    padding-top: 168px;
+    @include media-tablet {
+        padding: 0.7% 0px 0 17.5%;
     }
 }
 
@@ -15,7 +15,7 @@
     line-height: 2.4rem;
     width: 474px;
     padding-bottom: 41px;
-    @include media-laptop {
+    @include media-tablet {
         padding-bottom: 42px;
     }
 }
@@ -26,14 +26,30 @@
         &:hover {
             background-color: $color-light-l;
         }
-        @include media-laptop {
+        @include media-tablet {
             margin-left: 12.6rem;
         }
 }
 
+.notOnly__start-screen-puppy {
+    width: 695px;
+    height: 732px;
+    background-image: url("../../../assets/images/start-screen-puppy.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    @include media-tablet {       
+        width: 569px;
+        height: 593px;
+        background-image: url("../../../assets/images/start-screen-puppy-768.png");
+        background-size: cover;
+        margin: 14% 0 0 19.5%;
+    }
+}
+
 .wrapper__notOnly {
-    @include media-laptop {
-        display: flex;
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {       
         flex-direction: column;
     }
 }

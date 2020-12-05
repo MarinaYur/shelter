@@ -6,6 +6,9 @@
     padding: 25px 0 180px 0;
     margin-left: auto;
     margin-right: 0;
+    @include media-tablet {
+        padding: 25px 0 100px 0;
+    }
 }
 
 .ourFriends__button {
@@ -20,6 +23,10 @@
     width: 524px;
     margin: 0 auto;
     white-space: pre-line;
+    @include media-tablet {
+        margin-left: 160px;
+        padding-top: 59px;
+    }
 }
 
 .ourFriends__slider {
@@ -29,6 +36,9 @@
     flex-wrap: nowrap;
     padding: 60px 0 0 65px;
     position: relative;
+    @include media-tablet {
+        padding: 60px 0 0 94px;
+    }
 }
 
 .slider__arrow {
@@ -50,6 +60,9 @@
     background-position: center;
     transform: scaleX(-1);
     left: -4rem;
+    @include media-tablet {
+        left: 3rem;
+    }
 }
 
 .slider__right-arrow {
@@ -57,6 +70,9 @@
     background-repeat: no-repeat;
     background-position: center;
     right: 4rem;
+    @include media-tablet {
+        right: 3rem;
+    }
 }
 
 .ourFriends__button {
@@ -64,4 +80,19 @@
         &:hover {
             background-color: $color-light-l;
         }
+    @include media-tablet {
+        margin: 59px 0 0 253px;
+    }
+}
+
+.ourFriends__pet1 {
+    @include media-tablet {
+        padding-right: 40px;
+    }
+}
+
+.ourFriends__pet3 {
+    @include media-tablet {
+        display: none;
+    }
 }
