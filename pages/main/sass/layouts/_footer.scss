@@ -1,11 +1,27 @@
+.footer .layout-3-column { 
+    @include media-tablet {
+        @include columns($width: auto);
+        justify-content: flex-start;
+    }
+}
+
 .footer {
-background: $footer-gradient-background;
+    background: $footer-gradient-background;
+}
+
+.footer__contacts {
+    @include media-tablet {
+        padding: 0 20px 0 34px;
+    }
 }
 
 .footer__title {
     color: $color-light-xl;
     letter-spacing: 0.22rem;
     padding: 57px 0 32px 0;
+    @include media-tablet {
+        padding: 31px 0 32px 0px;
+    }
 }
 
 .footer__title span {
@@ -23,6 +39,9 @@ background: $footer-gradient-background;
     background-repeat: no-repeat;
     background-position-x: right;
     margin-top: 40px;
+    @include media-tablet {
+        margin: 65px 0 0 204px;
+    }
 }
 
 .footer__icon-phone {

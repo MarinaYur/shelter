@@ -4,6 +4,10 @@
 
 .wrapper__addition {
     padding: 81px 0 100px 142px;
+    @include media-tablet {
+        flex-direction: column-reverse;
+        padding: 81px 0 90px 131px;
+    }
 }
 
 .addition__image {
@@ -11,11 +15,14 @@
     height: 283px;
     background-image: url("../../../assets/images/donation-dog.svg");
     background-repeat: no-repeat;
-    background-position: center;;
+    background-position: center;
 }
 
 .addition__content {
     padding: 1px 161px 0 0px;
+    @include media-tablet {
+        padding: 0px 161px 47px 62px;
+    }
 }
 
 .addition__title {

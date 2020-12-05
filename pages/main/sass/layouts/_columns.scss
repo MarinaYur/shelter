@@ -1,6 +1,9 @@
 .layout-2-column {
     @include columns($width: 50%);
     flex-wrap: nowrap;
+    @include media-tablet {
+        @include columns($width: auto);
+    }
 }
 
 .layout-3-column{
