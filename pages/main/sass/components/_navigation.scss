@@ -1,6 +1,11 @@
 .navigation {
     width: 443px;
     padding-top: 15px;
+    // background-color: green;
+    @include media-mobile {
+        background-color: green;
+        display: none;
+    }
 }
 
 .navigation__list {
