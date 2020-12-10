@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     margin: 80px 120px 0 175px;
     @include media-tablet {
-        margin: 0 0 0 234px;
+        margin: 3px 120px 0 65px;
     }
 }
 
@@ -16,13 +16,14 @@
     justify-content: flex-start;
     @include media-tablet {
         flex-direction: column-reverse;
+        max-width: 430px;
     }
 }
 
 .about__content {
-    @include media-tablet{
-    margin-left: 170px;
-    }
+    // @include media-tablet{
+    // margin-left: 170px;
+    // }
 }
 
 .about__title {

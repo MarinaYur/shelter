@@ -249,7 +249,7 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about__petsImage {
-    margin: 0 0 0 234px;
+    margin: 3px 120px 0 65px;
   }
 }
 
@@ -261,12 +261,7 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .wrapper__about {
     flex-direction: column-reverse;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .about__content {
-    margin-left: 170px;
+    max-width: 430px;
   }
 }
 
@@ -448,8 +443,9 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .wrapper__addition {
+    max-width: 505px;
     flex-direction: column-reverse;
-    padding: 81px 0 90px 131px;
+    padding: 81px 0 90px 0px;
   }
 }
 
@@ -466,7 +462,7 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .addition__content {
-    padding: 0px 161px 47px 62px;
+    padding: 0px 161px 48px 62px;
   }
 }
 
@@ -481,7 +477,7 @@ p {
   color: #545454;
   letter-spacing: 0.09rem;
   font-weight: 400;
-  padding: 0 0 20px 1px;
+  padding: 0 0 17px 1px;
 }
 
 .addition__note {
@@ -509,13 +505,19 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer__wrapper {
+    max-width: 750px;
+  }
+}
+
 .footer {
   background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__contacts {
-    padding: 0 20px 0 34px;
+    padding: 0px 0px 0 25px;
   }
 }
 
@@ -535,7 +537,7 @@ p {
 }
 
 .footer__address {
-  padding: 0 0 0 38px;
+  padding: 0 0 0 59px;
 }
 
 .footer__image {
@@ -548,7 +550,7 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer__image {
-    margin: 65px 0 0 204px;
+    margin: 64px 0 0 195px;
   }
 }
 

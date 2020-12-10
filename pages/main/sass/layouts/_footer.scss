@@ -5,13 +5,19 @@
     }
 }
 
+.footer__wrapper {
+    @include media-tablet {
+        max-width: 750px;
+    }
+}
+
 .footer {
     background: $footer-gradient-background;
 }
 
 .footer__contacts {
     @include media-tablet {
-        padding: 0 20px 0 34px;
+        padding: 0px 0px 0 25px;
     }
 }
 
@@ -29,7 +35,7 @@
 }
 
 .footer__address {
-    padding: 0 0 0 38px;
+    padding: 0 0 0 59px;
 }
 
 .footer__image {
@@ -40,7 +46,7 @@
     background-position-x: right;
     margin-top: 40px;
     @include media-tablet {
-        margin: 65px 0 0 204px;
+        margin: 64px 0 0 195px;
     }
 }
 

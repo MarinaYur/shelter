@@ -5,8 +5,9 @@
 .wrapper__addition {
     padding: 81px 0 100px 142px;
     @include media-tablet {
+        max-width: 505px;
         flex-direction: column-reverse;
-        padding: 81px 0 90px 131px;
+        padding: 81px 0 90px 0px;
     }
 }
 
@@ -21,7 +22,7 @@
 .addition__content {
     padding: 1px 161px 0 0px;
     @include media-tablet {
-        padding: 0px 161px 47px 62px;
+        padding: 0px 161px 48px 62px;
     }
 }
 
@@ -36,7 +37,7 @@
     color: $color-dark-l;
     letter-spacing: 0.09rem;
     font-weight: 400;
-    padding: 0 0 20px 1px;
+    padding: 0 0 17px 1px;
 }
 
 .addition__note {
