@@ -9,6 +9,9 @@
     @include media-tablet {
         padding: 25px 0 100px 0;
     }
+    @include media-mobile {
+        padding: 25px 0 42px 0;
+    }
 }
 
 .ourFriends__button {
@@ -27,6 +30,11 @@
         margin-left: 160px;
         padding-top: 59px;
     }
+    @include media-mobile {
+        letter-spacing: 0.15rem;
+        max-width: 321px;
+        padding: 18px 0px 0 0px;
+    }
 }
 
 .ourFriends__slider {
@@ -38,6 +46,15 @@
     position: relative;
     @include media-tablet {
         padding: 60px 0 0 94px;
+    }
+    @include media-mobile {
+        padding: 41px 0 0 0px;
+    }
+}
+
+.slider__pets {
+    @include media-mobile {
+        margin: 0 auto;
     }
 }
 
@@ -52,6 +69,9 @@
         &:hover {
             background-color: $color-primary;
         }
+    @include media-mobile {
+        top: 49.6rem;
+    }
 }
 
 .slider__left-arrow {
@@ -63,6 +83,9 @@
     @include media-tablet {
         left: 3rem;
     }
+    @include media-mobile {
+        left: 6.78rem;
+    }
 }
 
 .slider__right-arrow {
@@ -72,6 +95,9 @@
     right: 4rem;
     @include media-tablet {
         right: 3rem;
+    }
+    @include media-mobile {
+        right: 6.78rem;
     }
 }
 
@@ -83,16 +109,32 @@
     @include media-tablet {
         margin: 59px 0 0 253px;
     }
+    @include media-mobile {
+        margin: 42px 0 0 30px;
+    }
 }
 
 .ourFriends__pet1 {
     @include media-tablet {
         padding-right: 40px;
     }
+    // @include media-mobile {
+    //     width: 270px;
+    //     height: 507px;
+    // }
+}
+
+.ourFriends__pet2{
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .ourFriends__pet3 {
     @include media-tablet {
+        display: none;
+    }
+    @include media-mobile {
         display: none;
     }
 }

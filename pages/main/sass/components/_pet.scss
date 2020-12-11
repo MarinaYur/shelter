@@ -3,6 +3,10 @@
     width: 361px;
     height: 435px;
     cursor: pointer;
+    @include media-mobile {
+        width: 270px;
+        height: 507px;
+    }
 }
 
 .pet:hover {

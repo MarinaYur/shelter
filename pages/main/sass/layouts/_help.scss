@@ -2,6 +2,9 @@
     padding: 58px 0 0 88px;
     letter-spacing: 1px;
     height: 398px;
+    @include media-mobile {
+        padding: 42px 0 0 30px;
+    }
 }
 
 .wrapper__help {
@@ -10,6 +13,11 @@
         padding-top: 81px;
         padding-bottom: 210px;
     }
+    @include media-mobile {
+        max-width: 290px;
+        padding-top: 42px;
+        padding-bottom: 242px;
+    }
 }
 
 .help_title {
@@ -17,4 +25,7 @@
     white-space: pre-line;
     letter-spacing: 0.21rem;
     padding-left: 3px;
+    @include media-mobile {
+        letter-spacing: 0.15rem;
+    }
 }

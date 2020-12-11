@@ -13,4 +13,7 @@
     @include media-tablet {
         padding-top: 31px;
     }
+    @include media-mobile {
+            padding: 30px 52px 0 10px;
+    }
 }

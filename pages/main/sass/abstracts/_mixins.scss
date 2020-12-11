@@ -19,5 +19,5 @@
 }
 
 @mixin media-mobile {
-    @media screen and (min-width: 320px) and (max-width: 767) {@content};
+    @media screen and (min-width: 320px) and (max-width: 767px) {@content};
 }

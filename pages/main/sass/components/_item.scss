@@ -4,11 +4,19 @@
     flex-direction: column;
     justify-content: space-between;
     height: 113px;
+    @include media-mobile {
+        height: 87px;
+    }
 }
 
 .item__image {
     width: 60px;
     height: 60px;
+    @include media-mobile {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+    }
 }
 
 .item__image1 {
