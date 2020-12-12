@@ -9,6 +9,12 @@
         flex-direction: column-reverse;
         padding: 81px 0 90px 0px;
     }
+    @include media-mobile {
+        max-width: 282px;
+        flex-direction: column-reverse;
+        padding: 42px 0 43px 0px;
+        margin: 0 auto;
+    }
 }
 
 .addition__image {
@@ -17,6 +23,13 @@
     background-image: url("../../../assets/images/donation-dog.svg");
     background-repeat: no-repeat;
     background-position: center;
+    @include media-mobile {
+        width: 262px;
+        height: 136px;
+        background-size: contain;
+        flex-basis: auto;
+        margin: 40px 0 0 10px;
+    }
 }
 
 .addition__content {
@@ -24,12 +37,20 @@
     @include media-tablet {
         padding: 0px 161px 48px 62px;
     }
+    @include media-mobile {
+        padding: 0;
+    }
 }
 
 .addition__title {
     padding-bottom: 20px;
     letter-spacing: 0.22rem;
     white-space: pre-line;
+    @include media-mobile {
+        text-align: center;
+        letter-spacing: 0.15rem;
+        padding-bottom: 24px;
+    }
 }
 
 .addition__subtitle {
@@ -38,6 +59,10 @@
     letter-spacing: 0.09rem;
     font-weight: 400;
     padding: 0 0 17px 1px;
+    @include media-mobile {
+        letter-spacing: 0.0056rem;
+        padding: 0 0 24px 3px;
+    }
 }
 
 .addition__note {
@@ -48,4 +73,8 @@
     padding: 21px 0 0 0;
     width: 362px;
     letter-spacing: 0.0023rem;
+    @include media-mobile {
+        width: 100%;
+        text-align: justify;
+    }
 }

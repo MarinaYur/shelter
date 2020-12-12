@@ -3,7 +3,13 @@
     letter-spacing: 1px;
     height: 398px;
     @include media-mobile {
-        padding: 42px 0 0 30px;
+        padding: 42px 0 0 0px;
+    }
+}
+
+.help__items >* {
+    @include media-mobile {
+        margin: 0 auto;
     }
 }
 
@@ -16,7 +22,7 @@
     @include media-mobile {
         max-width: 290px;
         padding-top: 42px;
-        padding-bottom: 242px;
+        padding-bottom: 241px;
     }
 }
 
