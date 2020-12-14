@@ -4,6 +4,9 @@
 
 .wrapper__ourFriends {
     padding: 25px 0 100px 0;
+    @include media-tablet {
+        max-width: 75.5%;
+    }
 }
 
 .ourFriends__button {
@@ -18,14 +21,24 @@
     width: 524px;
     margin: 0 auto;
     white-space: pre-line;
+    @include media-tablet {
+        letter-spacing: 0.21rem;
+        padding-left: 1px;
+    }
 }
 
 .ourFriends__slider {
     padding: 59px 0 0 0px;
+    @include media-tablet {
+        padding-top: 29px;
+    }
 }
 
 .slider__pets-row1 {
     padding-bottom: 30px;
+    @include media-tablet {
+        padding: 0;
+    }
 }
 
 .slider__arrows {
@@ -35,6 +48,9 @@
     width: 34rem;
     padding: 60px 0 0 0;
     margin: 0 auto;
+    @include media-tablet {
+        padding-top: 10px;
+    }
 }
 
 .slider__arrows div {
@@ -59,4 +75,10 @@
 .slider__arrows_right {
     color: $color-dark-s;
     border: 1px solid $color-primary;
+}
+
+.pet7, .pet8  {
+    @include media-tablet {
+        display: none;
+    }
 }

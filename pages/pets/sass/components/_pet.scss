@@ -1,8 +1,11 @@
 .pet {
     background-color: $color-light-s;
-    width: 361px;
+    width: 269px;
     height: 435px;
     cursor: pointer;
+    @include media-tablet {
+        margin-bottom:  30px;
+    }
 }
 
 .pet:hover {
@@ -55,22 +58,6 @@
     line-height: 2.272rem;
     color: $color-dark-l;
 }
-
-.pet2, .pet6 {
-    padding-left: 10px;
-}
-
-.pet3, .pet7{
-    padding-left: 20px;
-}
-
-.pet4, .pet8{
-    padding-left: 30px;
-}
-
-// .pet6 {
-//     padding-left: 10px;
-// }
 
 .pet__button {
     background-color: white;

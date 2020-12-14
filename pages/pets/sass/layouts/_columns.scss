@@ -8,7 +8,10 @@
 }
 
 .layout-4-column {
-    @include columns($width:25%)
+    @include columns($width:20%);
+    @include media-tablet {
+        @include columns($width: 40%);
+    }
 }
 
 .layout-9-column-in-2-rows{
