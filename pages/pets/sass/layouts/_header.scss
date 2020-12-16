@@ -5,8 +5,12 @@
 .header {
     padding-bottom: 22px;
     @include media-tablet {
-        // position: sticky;
-        // top: 0;
+        position: sticky;
+        top: 0;
+    }
+    @include media-mobile {
+        position: sticky;
+        top: 0;
     }
 }
 
@@ -20,6 +24,9 @@
     display: flex;
     justify-content: space-between;
     padding-top: 31px;
+    @include media-mobile {
+        padding: 30px 52px 0 10px;
+}
 }
 
 .notOnly__puppy {

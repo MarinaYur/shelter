@@ -6,6 +6,11 @@
     padding: 25px 0 100px 0;
     @include media-tablet {
         max-width: 75.5%;
+        padding: 25px 0 77px 0;
+    }
+    @include media-mobile {
+        max-width: 292px;
+        padding: 25px 0 42px 0;
     }
 }
 
@@ -25,12 +30,22 @@
         letter-spacing: 0.21rem;
         padding-left: 1px;
     }
+    @include media-mobile {
+        letter-spacing: 0.15rem;
+        max-width: 292px;
+        padding: 18px 0px 0 0px;
+    }
 }
 
 .ourFriends__slider {
     padding: 59px 0 0 0px;
     @include media-tablet {
         padding-top: 29px;
+    }
+    @include media-mobile {
+        padding: 42px 0 0 11px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -39,6 +54,15 @@
     @include media-tablet {
         padding: 0;
     }
+    @include media-mobile {
+        padding-bottom: 12px;
+    }
+}
+
+.slider__pets-row2 {
+    @include media-mobile {
+    display: none;
+}   
 }
 
 .slider__arrows {
@@ -50,6 +74,10 @@
     margin: 0 auto;
     @include media-tablet {
         padding-top: 10px;
+    }
+    @include media-mobile {
+        max-width: 29.5rem;
+        padding: 0;
     }
 }
 
@@ -73,8 +101,20 @@
 }
 
 .slider__arrows_right {
-    color: $color-dark-s;
+    color: $color-dark-3xl;
     border: 1px solid $color-primary;
+}
+
+.pet {
+    @include media-mobile {
+        margin-bottom: 30px;
+    }
+}
+
+.pet4 {
+    @include media-mobile {
+        display: none;
+    }    
 }
 
 .pet7, .pet8  {
