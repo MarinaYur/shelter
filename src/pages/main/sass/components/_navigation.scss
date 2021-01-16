@@ -3,7 +3,6 @@
     padding-top: 15px;
     // background-color: green;
     @include media-mobile {
-        display: none;
         position: absolute;
         top: 0;
         right: 0px;
@@ -12,40 +11,26 @@
         background-color: $color-dark-3xl;
         text-align: center;
         padding-top: 232px;
-        transition: right 10s;
-
-        animation-duration: 1.5s;
-        animation-name: slidein;
-        @keyframes slidein {
-            from {
-                margin-right: -100%;
-                width: 320px;
+        transform: translateX(100%);
+        &.slide-in {
+            animation: slide-in 1s forwards;
+            @keyframes slide-in {
+                100% { transform: translateX(0); }
             }
-
-            to {
-                margin-right: 0%;
-                width: 320px;
+        }
+        &.slide-out {
+            animation: slide-out 1s forwards;
+            @keyframes slide-out {
+                0% { transform: translateX(0%); }
+                100% { transform: translateX(100%); }
             }
         }
     }
-        animation-name: slideout;
-            @keyframes slideout {
-                from {
-                    margin-right: 0%;
-                    width: 320px;
-                }
-
-                to {
-                    margin-right: -100%;
-                    width: 320px;
-                }
-        }
- }
-    
+}
 
 
 // .burger_mobile{
-    
+
 // }
 
 .navigation__list {
