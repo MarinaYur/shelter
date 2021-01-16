@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style-main": "sass --watch pages/main/sass/style.scss pages/main/sass/style.css",
-    "style-pets": "sass --watch pages/pets/sass/style.scss pages/pets/sass/style.css",
+    "style-main": "sass --watch src/pages/main/sass/style.scss src/pages/main/sass/style.css",
+    "style-pets": "sass --watch src/pages/pets/sass/style.scss src/pages/pets/sass/style.css",
     "test": "echo \"Error: no test specified\" $$ exit 1",
     "build": "webpack -p",
     "watch": "webpack --watch"
@@ -22,7 +22,8 @@
   "homepage": "https://github.com/MarinaYur/shelter#readme",
   "dependencies": {
     "normalize.scss": "^0.1.0",
-    "saas-npm": "^1.3.14"
+    "saas-npm": "^1.3.14",
+    "sass": "^1.32.4"
   },
   "devDependencies": {
     "webpack": "^5.13.0",
