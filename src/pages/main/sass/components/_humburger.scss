@@ -34,3 +34,8 @@
     top: calc(50% - 1px);
     left: 0;
 }
+
+.burger_reverse {
+    transform:  rotate(90deg);
+    z-index: 1;
+}

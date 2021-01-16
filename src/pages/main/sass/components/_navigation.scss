@@ -4,17 +4,64 @@
     // background-color: green;
     @include media-mobile {
         display: none;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        width: 320px;
+        height: 823px;
+        background-color: $color-dark-3xl;
+        text-align: center;
+        padding-top: 232px;
+        transition: right 10s;
+
+        animation-duration: 1.5s;
+        animation-name: slidein;
+        @keyframes slidein {
+            from {
+                margin-right: -100%;
+                width: 320px;
+            }
+
+            to {
+                margin-right: 0%;
+                width: 320px;
+            }
+        }
     }
-}
+        animation-name: slideout;
+            @keyframes slideout {
+                from {
+                    margin-right: 0%;
+                    width: 320px;
+                }
+
+                to {
+                    margin-right: -100%;
+                    width: 320px;
+                }
+        }
+ }
+    
+
+
+// .burger_mobile{
+    
+// }
 
 .navigation__list {
     display: flex;
     justify-content: space-between;
+    @include media-mobile {
+        flex-direction: column;
+    }
 }
 
 .list__item {
     @include font($size: 1.5rem, $height: 2.4rem);
     list-style-type: none;
+    @include media-mobile {
+        @include font (3.2rem, 9.1rem);
+    }
 }
 
 .list__link {

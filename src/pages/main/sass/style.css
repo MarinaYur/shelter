@@ -41,6 +41,7 @@ html {
 }
 
 body {
+  overflow: visible;
   max-width: 1280px;
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -116,6 +117,14 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
+}
+
+.shadow_on {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(41, 41, 41, 0.6);
 }
 
 .wrapper {
@@ -1107,14 +1116,78 @@ p {
   left: 0;
 }
 
+.burger_reverse {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  z-index: 1;
+}
+
 .navigation {
   width: 443px;
   padding-top: 15px;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .navigation {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 320px;
+    height: 823px;
+    background-color: #292929;
+    text-align: center;
+    padding-top: 232px;
+    -webkit-transition: right 10s;
+    transition: right 10s;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  @-webkit-keyframes slidein {
+    from {
+      margin-right: -100%;
+      width: 320px;
+    }
+    to {
+      margin-right: 0%;
+      width: 320px;
+    }
+  }
+  @keyframes slidein {
+    from {
+      margin-right: -100%;
+      width: 320px;
+    }
+    to {
+      margin-right: 0%;
+      width: 320px;
+    }
+  }
+}
+
+@-webkit-keyframes slideout {
+  from {
+    margin-right: 0%;
+    width: 320px;
+  }
+  to {
+    margin-right: -100%;
+    width: 320px;
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-right: 0%;
+    width: 320px;
+  }
+  to {
+    margin-right: -100%;
+    width: 320px;
   }
 }
 
@@ -1127,12 +1200,30 @@ p {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .list__item {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2.4rem;
   list-style-type: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .list__item {
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 9.1rem;
+  }
 }
 
 .list__link {
@@ -1144,6 +1235,15 @@ p {
   color: #FAFAFA;
   border-bottom: solid 3px #F1CDB3;
   padding-bottom: 0.4rem;
+}
+
+.logo {
+  z-index: 1;
+}
+
+.logo_opened_burger {
+  width: 200px;
+  margin-left: calc(100% - 258px);
 }
 
 .logo__title {

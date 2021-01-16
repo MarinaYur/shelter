@@ -1,3 +1,12 @@
+.logo {
+    z-index: 1;
+}
+
+.logo_opened_burger {
+    width: 200px;
+    margin-left: calc(100% - 258px);
+}
+
 .logo__title {
     font-family: Georgia;
     letter-spacing: 0.2rem;
