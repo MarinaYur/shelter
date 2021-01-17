@@ -2,8 +2,6 @@ window.onload = function() {
     console.log("Hello world");
     changeLocationMainToPetsPage ();
     openCloseBurgerMenu();
-    // openBurgerMenu();
-    closeBurgerMenu();
 }
 
 //change location main page to pets page
@@ -29,8 +27,9 @@ const openCloseBurgerMenu = () => {
         if (e.target == burger || e.target == burgerLine || e.target == shadow) {
             if (!logo.classList.contains('logo_opened_burger')) { 
                 openBurgerMenu(logo, burger, navigation, shadow, body);
+            } else {
+                closeBurgerMenu(logo, burger, navigation, shadow, body);
             }
-            else closeBurgerMenu(logo, burger, navigation, shadow, body);
         }
     });
 }
@@ -42,6 +41,8 @@ const openBurgerMenu = (logo, burger, navigation, shadow, body) => {
     logo.classList.add('logo_opened_burger');
     burger.classList.add('burger_reverse');
     navigation.style.display = 'block';
+    navigation.classList.remove('slide-out');
+    navigation.classList.add('slide-in');
     shadow.classList.add('shadow_on');
     // navigation.classList.add('burger_mobile_open');
     // navigation.classList.remove('burger_mobile_close');
@@ -55,7 +56,8 @@ const closeBurgerMenu = (logo, burger, navigation, shadow, body) => {
     logo.classList.remove('logo_opened_burger');
     burger.classList.remove('burger_reverse');
     shadow.classList.remove('shadow_on');
-    navigation.style.display = 'none';
+    navigation.classList.add('slide-out');
+    navigation.classList.remove('slide-in');
     // navigation.classList.remove('burger_mobile_open');
     // navigation.classList.add('burger_mobile_close');
 }
