@@ -1,7 +1,11 @@
 .pet {
+    position: relative;
+    display: none;
     background-color: $color-light-s;
-    width: 361px;
+    width: 269px;
     height: 435px;
+    margin-right: 91px;
+    animation: 0.5s ease-in-out;
     cursor: pointer;
     @include media-mobile {
         width: 270px;
@@ -10,7 +14,7 @@
 }
 
 .pet:hover {
-    transform: scale(1.5);
+    background-color: $color-light-xl;
 }
 
 .pet__image {

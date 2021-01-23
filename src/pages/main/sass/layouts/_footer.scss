@@ -54,7 +54,6 @@
 }
 
 .footer__address {
-    padding: 0 0 0 59px;
     @include media-mobile {
         padding: 10px 0 0 10px;
     }
@@ -62,7 +61,6 @@
 
 .footer__address h3 {
     width: 91%;
-    padding: 30px 0 39px 18px;
 }
 
 .footer__image {

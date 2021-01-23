@@ -1,9 +1,10 @@
 .ourFriends {
+    // position: relative;
     background-color: $color-light-l;
 }
 
 .wrapper__ourFriends {
-    padding: 25px 0 180px 0;
+    padding: 25px 0 99px 0;
     margin-left: auto;
     margin-right: 0;
     @include media-tablet {
@@ -40,10 +41,6 @@
 }
 
 .ourFriends__slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
     padding: 60px 0 0 65px;
     position: relative;
     @include media-tablet {
@@ -54,7 +51,91 @@
     }
 }
 
+.slider_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.next,
+.active {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+// .block {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-right: 161px;
+//     transform: translateX(0%)
+// }
+
+// .right_block {
+//     transform: translateX(100%);
+// }
+
+// .left_block {
+//     transform: translateX(-100%);
+// }
+
+// .to_left {
+//     animation: toLeft 1s forwards;
+//     @keyframes toLeft {
+//         100% {transform: translateX(0%)}
+//     }
+// }
+
+// .to_right {
+//     animation: toRight 1s forwards;
+//     @keyframes toRight {
+//         100% {transform: translateX(0%)}
+//     }
+// }
+
 .slider__pets {
+    width: 87%;
     @include media-mobile {
         margin: 0 auto;
     }

@@ -7,7 +7,7 @@
 }
 
 .layout-3-column{
-    @include columns($width:33.3%);
+    @include columns($width:auto);
     @include media-tablet {
         justify-content: flex-start;
     }
