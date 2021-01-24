@@ -1,11 +1,12 @@
 .pet {
-    position: relative;
-    display: none;
+    // position: relative;
+    // display: none;
+    // display: inline-block;
     background-color: $color-light-s;
     width: 269px;
     height: 435px;
     margin-right: 91px;
-    animation: 0.5s ease-in-out;
+    // animation: 0.5s ease-in-out;
     cursor: pointer;
     @include media-mobile {
         width: 270px;

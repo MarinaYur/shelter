@@ -362,23 +362,24 @@ const closeBurgerMenu = (logo, burger, navigation, shadow, body) => {
 // slider
 
 const slider = () => {
-    let pets = document.querySelectorAll('.slider__pets .pet');
+    let pets = document.querySelectorAll('.slider__pets .block');
     let currentPet = 0;
     let isEnabled = true; 
-    const changeCurrentPet = (n) => {
+    function changeCurrentPet(n) {
     // for creating continuous carousel
         currentPet = (n + pets.length) % pets.length;
     }
     
-    const hidePet = (direction) => {
+    function hidePet(direction) {
         isEnabled = false;
         pets[currentPet].classList.add(direction);
         pets[currentPet].addEventListener('animationend', function() {
+            console.log('animationend')
             this.classList.remove('active', direction);
         })
     }
     
-    const showPet = (direction) => {
+    function showPet(direction) {
         pets[currentPet].classList.add('next' ,direction);
         pets[currentPet].addEventListener('animationend', function() {
             this.classList.remove('next', direction);
@@ -387,13 +388,13 @@ const slider = () => {
         })
     }
 
-    const nextPet = (n) => {
+    function nextPet(n) {
         hidePet('to-left');
         changeCurrentPet(n + 1);
         showPet('from-right');
     }
 
-    const previousPet = (n) => {
+    function previousPet(n) {
         hidePet('to-right');
         changeCurrentPet(n - 1);
         showPet('from-left');
