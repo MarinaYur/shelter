@@ -8,7 +8,8 @@
     "style-pets": "sass --watch src/pages/pets/sass/style.scss src/pages/pets/sass/style.css",
     "test": "echo \"Error: no test specified\" $$ exit 1",
     "build": "webpack -p",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,12 @@
   "dependencies": {
     "normalize.scss": "^0.1.0",
     "saas-npm": "^1.3.14",
-    "sass": "^1.32.4"
+    "sass": "^1.32.6"
   },
   "devDependencies": {
-    "webpack": "^5.13.0",
-    "webpack-cli": "^4.3.1"
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }
